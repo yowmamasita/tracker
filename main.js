@@ -24,12 +24,20 @@ var server = http.createServer(function(req, res) {
 
   try {
     data = {
-      'msg': ['Hello', 'World', '!']
+      'interval': 1800,
+      'min interval': 300,
     };
+
+    try {
+      //
+    }
+    catch (e) {
+      data['warning message'] = e.message;
+    }
   }
   catch (e) {
     data = {
-      'failure': e.message
+      'failure reason': e.message
     };
   }
 
