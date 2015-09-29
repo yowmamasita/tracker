@@ -36,6 +36,7 @@ var server = http.createServer(function(req, res) {
     }
   }
   catch (e) {
+    // failure reason: If present, then no other keys may be present
     data = {
       'failure reason': e.message
     };
