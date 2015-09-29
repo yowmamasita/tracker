@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/yowmamasita/tracker/issues"
   },
-  "homepage": "https://github.com/yowmamasita/tracker#readme"
+  "homepage": "https://github.com/yowmamasita/tracker#readme",
+  "dependencies": {
+    "bencode": "^0.7.0"
+  }
 }
