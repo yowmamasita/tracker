@@ -11,6 +11,15 @@ var server = http.createServer(function(req, res) {
   var queryObject = url.parse(req.url, true).query;
   console.log(queryObject);
 
+  // queryObject['info_hash']
+  // queryObject['peer_id']
+  // queryObject['ip']
+  // queryObject['port']
+  // queryObject['uploaded']
+  // queryObject['downloaded']
+  // queryObject['left']
+  // queryObject['event']
+
   var data = {};
 
   try {
