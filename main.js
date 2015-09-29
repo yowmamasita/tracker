@@ -39,6 +39,7 @@ var server = http.createServer(function(req, res) {
       'port': 6889
     };
     peers.push(peer);
+    // TODO: plausible deniability
 
     data['peers'] = peers;
 
@@ -60,4 +61,4 @@ var server = http.createServer(function(req, res) {
   res.writeHead(200);
   res.end(bencode.encode(data));
 });
-server.listen(8080);
+server.listen(6969);
