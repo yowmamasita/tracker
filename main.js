@@ -11,7 +11,20 @@ var server = http.createServer(function(req, res) {
   var queryObject = url.parse(req.url, true).query;
   console.log(queryObject);
 
+  var data = {};
+
+  try {
+    data = {
+      'msg': ['Hello', 'World', '!']
+    };
+  }
+  catch (e) {
+    data = {
+      'failure': e.message
+    };
+  }
+
   res.writeHead(200);
-  res.end('Hello Http');
+  res.end(bencode.encode(data));
 });
 server.listen(8080);
