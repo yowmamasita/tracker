@@ -32,6 +32,7 @@ var server = http.createServer(function(req, res) {
       //
     }
     catch (e) {
+      // response still gets processed normally, we still need the required keys
       data['warning message'] = e.message;
     }
   }
