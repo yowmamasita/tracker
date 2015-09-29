@@ -1,2 +1,2 @@
 # tracker
-Bittorrent tracker in Node
+Bittorrent tracker built with Node and Redis
