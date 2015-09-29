@@ -4,7 +4,7 @@ const VERSION = '1.0.0'
 
 var server = http.createServer(function(req, res) {
   res.setHeader('Content-Type', 'text/plain');
-  res.setHeader('X-Tracker-Version', 'tracker ' + VERSION);
+  res.setHeader('X-Tracker-Version', 'yowmamasita/tracker ' + VERSION);
   // X-Tracker-Version
   res.writeHead(200);
   res.end('Hello Http');
