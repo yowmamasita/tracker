@@ -28,6 +28,20 @@ var server = http.createServer(function(req, res) {
       'min interval': 300,
     };
 
+    data['complete'] = 0;  // seeders
+    data['incomplete'] = 0;  // leechers
+
+    var peers = [];
+
+    var peer = {
+      'peer id': '',
+      'ip': '',
+      'port': 6889
+    };
+    peers.push(peer);
+
+    data['peers'] = peers;
+
     try {
       //
     }
