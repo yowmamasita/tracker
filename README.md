@@ -3,13 +3,10 @@ Bittorrent tracker built with Node and Redis
 
 ## Deploy
 Running redis thru docker
-`docker run -d -p 6379:6379 -v <data-dir>:/data --name redis dockerfile/redis redis-server /etc/redis/redis.conf --requirepass <password>`
-
-redis-cli
-`docker run -it --rm --link redis:redis dockerfile/redis bash -c 'redis-cli -h redis'`
+`docker run -d -p 6379:6379 -v ./redis:/data --name tracker-redis redis redis-server --requirepass <password>`
 
 Run the application
 `node main.js`
 
-## Announce url
+### Announce url
 `http://ip:6969/announce`
