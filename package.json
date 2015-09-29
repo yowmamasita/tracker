@@ -1,0 +1,23 @@
+{
+  "name": "tracker",
+  "version": "1.0.0",
+  "description": "Bittorrent tracker built with Node and Redis",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yowmamasita/tracker.git"
+  },
+  "keywords": [
+    "bittorrent",
+    "tracker"
+  ],
+  "author": "Ben Sarmiento <me@bensarmiento.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yowmamasita/tracker/issues"
+  },
+  "homepage": "https://github.com/yowmamasita/tracker#readme"
+}
